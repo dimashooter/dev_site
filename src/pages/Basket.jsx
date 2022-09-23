@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import BasketItem from '../Components/BasketItem';
 import Modal from '../Components/modal';
 import { useCartContext } from '../Context';
 import { formatCurrency } from '../hooks/convertCurrency';
+import { IoMdArrowRoundBack } from 'react-icons/io';
 
 const Basket = () => {
 	const { basket, basketPrice, clearBasket } = useCartContext();
@@ -33,6 +34,9 @@ const Basket = () => {
 	}
 	return (
 		<div className="container">
+			<Link to="/" className="back">
+				<IoMdArrowRoundBack /> <span>back</span>
+			</Link>
 			<div className="basket__wrapper">
 				<h2>Заказаные товары:</h2>
 

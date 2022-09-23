@@ -46,14 +46,14 @@ const BuyComponent = () => {
 								</div>
 							</div>
 							<div className="buy__star">
-								<span>{state.price}</span>
+								<span>{state.price} &#8364;</span>
 								<StarIcon />
 							</div>
 						</div>
 						{quantity !== 0 ? (
-							<button className="buy__btn">
-								<Link to="/basket">check</Link>
-							</button>
+							<Link to="/basket">
+								<button className="buy__btn">check</button>
+							</Link>
 						) : (
 							<button className="buy__btn" onClick={() => addToCart(state)}>
 								buy

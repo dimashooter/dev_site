@@ -293,6 +293,11 @@
   text-transform: uppercase;
   color: #0093a1;
 }
+.buy__btn:active{
+  background:rgba(0, 147, 161, 1);
+  color:#fff;
+
+}
 
 .buy__description-wrapper {
   display: flex;

@@ -122,3 +122,9 @@ img {
 	padding: 50px;
 	z-index: 1000;
 }
+.back {
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
